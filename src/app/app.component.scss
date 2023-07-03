@@ -1,0 +1,13 @@
+#nav:hover{
+    background-color:skyblue;
+}
+
+.custom-image{
+    max-width: 85%;
+    margin-top: 10px;
+    height: auto;
+    @media (min-width:992px) {
+    margin-top: 8rem; 
+    margin-bottom: 8rem;
+    }
+  }

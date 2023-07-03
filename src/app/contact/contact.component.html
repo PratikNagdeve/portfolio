@@ -1,0 +1,64 @@
+<!--Contact section-->
+<div class="container-fluid mt-5" id="Contact">
+    <p style="font-size: 25px;text-align: center;font-weight: bold;">Contact</p>
+    <div class="row mt-5">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <h4 class="text-center" style="color: rgb(72, 72, 240);">Contact Me</h4>
+          <div class="row mt-3">
+            
+              <div class="col-lg-6 text-center">
+                <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class='fas fa-user-circle' style="font-size: 25px;color: rgb(72, 72, 240);padding-top: 5px;padding-right: 5px;"></i>
+                    </span>
+                    <input type="text" formControlName="user" style="border-radius: 20px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                    
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon" >
+                      <i class='fas fa-file-alt' style="font-size: 26px;color: rgb(72, 72, 240);padding-top: 5px;padding-right: 7px;margin-left: 2px;"></i>
+                    </span>
+                    <input type="text" formControlName="subject"  style="border-radius: 20px;" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Subject">
+  
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class='fas fa-envelope' style="font-size: 24px;color:rgb(72, 72, 240);padding-top: 5px;padding-right: 5px;"></i>
+  
+                    </span>
+  
+                    <input type="email" formControlName="email"  style="border-radius: 20px;" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" formControlName="textArea" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                </div>
+  
+                <button type="submit" [disabled]="!FormData.valid" class="btn btn-primary">Send</button>
+                </form>
+              </div>
+              <div class="col-lg-6">
+                <div class="ml-5">
+                  <h6>Phone</h6>
+                  <p>+91 7666927533</p>
+                  <h6>Email</h6>
+                  <p>pratiknagdeve7@gmail.com</p>
+                </div>
+                
+              </div>
+            
+          </div>
+         </div>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+    
+  </div>
